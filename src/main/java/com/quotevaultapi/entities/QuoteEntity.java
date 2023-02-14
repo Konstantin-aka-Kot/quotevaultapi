@@ -1,8 +1,7 @@
-package com.quotevaultapi.models;
+package com.quotevaultapi.entities;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
-import lombok.Builder;
 import lombok.Data;
 
 import java.time.LocalDateTime;
@@ -10,8 +9,7 @@ import java.time.LocalDateTime;
 @Entity
 @Table(name = "quote")
 @Data
-// @Builder нужен?
-public class Quote {
+public class QuoteEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
@@ -22,8 +20,8 @@ public class Quote {
 
     @NotNull
     @ManyToOne
-    @JoinColumn(name = "user_id", referencedColumnName = "id")
-    private User author;
+    @JoinColumn(name = "account_id")
+    private AccountEntity account;
 
     @Column(name = "votes")
     private int votes;
@@ -33,7 +31,4 @@ public class Quote {
 
     @Column(name = "updated_at")
     private LocalDateTime updatedAt;
-
-    public Quote() {
-    }
 }
