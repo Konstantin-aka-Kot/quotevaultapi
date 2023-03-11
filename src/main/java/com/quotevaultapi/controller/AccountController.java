@@ -1,8 +1,8 @@
-package com.quotevaultapi.controllers;
+package com.quotevaultapi.controller;
 
 import com.quotevaultapi.dto.AccountEntityDTO;
-import com.quotevaultapi.entities.AccountEntity;
-import com.quotevaultapi.services.AccountService;
+import com.quotevaultapi.entity.AccountEntity;
+import com.quotevaultapi.service.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -14,13 +14,13 @@ import org.modelmapper.ModelMapper;
 
 @RestController
 @RequestMapping("/users")
-public class AccountsController {
+public class AccountController {
 
     private final AccountService accountService;
     private final ModelMapper modelMapper;
 
     @Autowired
-    public AccountsController(AccountService accountService, ModelMapper modelMapper) {
+    public AccountController(AccountService accountService, ModelMapper modelMapper) {
         this.accountService = accountService;
         this.modelMapper = modelMapper;
     }

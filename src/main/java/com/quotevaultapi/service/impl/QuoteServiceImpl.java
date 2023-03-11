@@ -1,9 +1,9 @@
-package com.quotevaultapi.services.impl;
+package com.quotevaultapi.service.impl;
 
-import com.quotevaultapi.entities.QuoteEntity;
-import com.quotevaultapi.repositories.QuoteRepository;
-import com.quotevaultapi.exceptions.QuoteNotFoundException;
-import com.quotevaultapi.services.QuoteService;
+import com.quotevaultapi.entity.QuoteEntity;
+import com.quotevaultapi.repository.QuoteRepository;
+import com.quotevaultapi.exception.QuoteNotFoundException;
+import com.quotevaultapi.service.QuoteService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;

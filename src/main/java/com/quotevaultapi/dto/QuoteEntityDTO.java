@@ -1,6 +1,6 @@
 package com.quotevaultapi.dto;
 
-import com.quotevaultapi.entities.AccountEntity;
+import com.quotevaultapi.entity.AccountEntity;
 import lombok.Getter;
 import lombok.Setter;
 

@@ -1,6 +1,6 @@
 package com.quotevaultapi.dto;
 
-import com.quotevaultapi.entities.QuoteEntity;
+import com.quotevaultapi.entity.QuoteEntity;
 import lombok.Getter;
 import lombok.Setter;
 import java.util.List;

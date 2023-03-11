@@ -1,4 +1,4 @@
-package com.quotevaultapi.services.impl;
+package com.quotevaultapi.service.impl;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -9,8 +9,8 @@ import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
-import com.quotevaultapi.entities.AccountEntity;
-import com.quotevaultapi.repositories.AccountRepository;
+import com.quotevaultapi.entity.AccountEntity;
+import com.quotevaultapi.repository.AccountRepository;
 
 
 class AccountServiceImplTest {

@@ -1,8 +1,8 @@
-package com.quotevaultapi.controllers;
+package com.quotevaultapi.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.quotevaultapi.dto.AccountEntityDTO;
-import com.quotevaultapi.entities.AccountEntity;
+import com.quotevaultapi.entity.AccountEntity;
 import org.modelmapper.ModelMapper;
 
 import java.io.IOException;

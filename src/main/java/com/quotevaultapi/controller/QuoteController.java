@@ -1,8 +1,8 @@
-package com.quotevaultapi.controllers;
+package com.quotevaultapi.controller;
 
 import com.quotevaultapi.dto.QuoteEntityDTO;
-import com.quotevaultapi.entities.QuoteEntity;
-import com.quotevaultapi.services.QuoteService;
+import com.quotevaultapi.entity.QuoteEntity;
+import com.quotevaultapi.service.QuoteService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
 import org.springframework.http.HttpStatus;
@@ -15,13 +15,13 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/quotes")
-public class QuotesController {
+public class QuoteController {
 
     private final QuoteService quoteService;
     private final ModelMapper modelMapper;
 
     @Autowired
-    public QuotesController(QuoteService quoteService, ModelMapper modelMapper) {
+    public QuoteController(QuoteService quoteService, ModelMapper modelMapper) {
         this.quoteService = quoteService;
         this.modelMapper = modelMapper;
     }

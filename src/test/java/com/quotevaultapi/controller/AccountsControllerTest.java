@@ -1,8 +1,8 @@
-package com.quotevaultapi.controllers;
+package com.quotevaultapi.controller;
 
 import com.quotevaultapi.dto.AccountEntityDTO;
-import com.quotevaultapi.entities.AccountEntity;
-import com.quotevaultapi.services.AccountService;
+import com.quotevaultapi.entity.AccountEntity;
+import com.quotevaultapi.service.AccountService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -22,7 +22,7 @@ import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 @ExtendWith(SpringExtension.class)
-@WebMvcTest(AccountsController.class)
+@WebMvcTest(AccountController.class)
 class AccountsControllerTest {
 
     @Mock
@@ -32,7 +32,7 @@ class AccountsControllerTest {
     private ModelMapper modelMapper;
 
     @InjectMocks
-    private AccountsController accountsController;
+    private AccountController accountsController;
 
     AccountEntityDTO accountEntityDTO;
     AccountEntity accountEntity;

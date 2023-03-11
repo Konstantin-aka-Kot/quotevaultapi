@@ -1,8 +1,8 @@
-package com.quotevaultapi.controllers;
+package com.quotevaultapi.controller;
 
 import com.quotevaultapi.dto.QuoteEntityDTO;
-import com.quotevaultapi.entities.QuoteEntity;
-import com.quotevaultapi.services.QuoteService;
+import com.quotevaultapi.entity.QuoteEntity;
+import com.quotevaultapi.service.QuoteService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
@@ -19,7 +19,7 @@ import static org.mockito.Mockito.*;
 
 class QuotesControllerTest {
 
-    private QuotesController quotesController;
+    private QuoteController quotesController;
 
     @Mock
     private QuoteService quoteService;
@@ -27,7 +27,7 @@ class QuotesControllerTest {
     @BeforeEach
     void setUp() {
         MockitoAnnotations.openMocks(this);
-        quotesController = new QuotesController(quoteService, new ModelMapper());
+        quotesController = new QuoteController(quoteService, new ModelMapper());
     }
 
     @Test

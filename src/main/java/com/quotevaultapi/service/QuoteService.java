@@ -1,7 +1,7 @@
-package com.quotevaultapi.services;
+package com.quotevaultapi.service;
 
 
-import com.quotevaultapi.entities.QuoteEntity;
+import com.quotevaultapi.entity.QuoteEntity;
 import org.springframework.data.domain.Sort;
 
 import java.util.List;

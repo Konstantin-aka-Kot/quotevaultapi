@@ -1,6 +1,6 @@
-package com.quotevaultapi.services;
+package com.quotevaultapi.service;
 
-import com.quotevaultapi.entities.AccountEntity;
+import com.quotevaultapi.entity.AccountEntity;
 
 public interface AccountService {
     AccountEntity save(AccountEntity accountEntity);

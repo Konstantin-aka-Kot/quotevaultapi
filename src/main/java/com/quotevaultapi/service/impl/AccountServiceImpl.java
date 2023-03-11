@@ -1,8 +1,8 @@
-package com.quotevaultapi.services.impl;
+package com.quotevaultapi.service.impl;
 
-import com.quotevaultapi.entities.AccountEntity;
-import com.quotevaultapi.repositories.AccountRepository;
-import com.quotevaultapi.services.AccountService;
+import com.quotevaultapi.entity.AccountEntity;
+import com.quotevaultapi.repository.AccountRepository;
+import com.quotevaultapi.service.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
